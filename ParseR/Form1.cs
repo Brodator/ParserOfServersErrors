@@ -118,7 +118,7 @@ namespace ParseR
 
                         searchOutput++;
                     }
-                    else if (LongestCommonSubsequenceExtensions.LongestCommonSubsequence(query, errorModels[i].sourceError, true).Item2 > 0.001)
+                    else if (LongestCommonSubsequenceExtensions.LongestCommonSubsequence(query, errorModels[i].sourceError, true).Item2 > 0.005)
                     {
                         DataGridViewRow row = dataGridView1.Rows[i];
 
@@ -410,13 +410,10 @@ namespace ParseR
                 dataGridView1_CellDoubleClick(sender, ee);
             }
 
-
-
         }
 
         private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-
             if (e.RowIndex < parsedData.Count && e.RowIndex > -1 && e.ColumnIndex > -1 && e.ColumnIndex < 5)
             {
                 Form2 form2 = new Form2(e);
