@@ -118,7 +118,7 @@ namespace ParseR
 
                         searchOutput++;
                     }
-                    else if (LongestCommonSubsequenceExtensions.LongestCommonSubsequence(query, errorModels[i].sourceError, true).Item2 > 0.005)//improved the accuracy of word recognition in fuzzySearch
+                    else if (LongestCommonSubsequenceExtensions.LongestCommonSubsequence(query, errorModels[i].sourceError, true).Item2 > 0.005)//improved the accuracy of word recognition in fuzzy Search
                     {
                         DataGridViewRow row = dataGridView1.Rows[i];
 
